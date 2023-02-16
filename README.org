@@ -1,0 +1,10 @@
+* About
+This is the supplementary code (in Julia) for the paper Zheng Chen and Yura Malitsky "Over-the-Air Computation with Multiple Receivers: A Space-Time Approach", [[https://arxiv.org/abs/2208.11751][arxiv]].
+
+
+
+* Usage
+Clone the repository. Install all necessary packages (quite likely you already have them). To recover all plots as in the paper, run in Julia ~include("scripts/main.jl")~. Modify the input parameters in the file ~main.jl~ if you want to play further.
+
+It will take some time, since there are 12 problems each with 100 seeds, that is we will need to solve 1200 large dimensional optimization problems. All the date in the process of solving them will be saved on the disk, so next time to regenerate something, will be much faster.
+The data files are not included since this will take too much space. The final csv file with all the data after averaging is provided.
